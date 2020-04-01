@@ -18,5 +18,6 @@ console.log("页面ID：" + process.env.VUE_APP_PROJECT_ID)
 // VUE 平台配置内容
 module.exports = {
     productionSourceMap: false,
-    publicPath: './'
+    publicPath: './',
+    outputDir: 'dist_' + config['--projectId'],
 }
