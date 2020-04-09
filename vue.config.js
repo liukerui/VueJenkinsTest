@@ -19,5 +19,5 @@ console.log("页面ID：" + process.env.VUE_APP_PROJECT_ID)
 module.exports = {
     productionSourceMap: false,
     publicPath: './',
-    outputDir: 'dist_' + config['--projectId'] + config['--buildNumber'],
+    outputDir: 'dist_' + config['--projectId'] + "_" + config['--buildNumber'],
 }
