@@ -1,10 +1,7 @@
 <template>
     <div class="hello">
         <h1>{{ name }}</h1>
-        <p>
-            For a guide and recipes on how to configure / customize this project,<br>
-            check out the
-        </p>
+        <p>{{ dataUrl }}</p>
     </div>
 </template>
 
@@ -16,7 +13,8 @@
         },
         data() {
             return {
-                name: process.env.VUE_APP_PROJECT_ID
+                name: process.env.VUE_APP_PROJECT_ID,
+                dataUrl: process.env.VUE_APP_PROJECT_DATA_URL
             }
         }
     }

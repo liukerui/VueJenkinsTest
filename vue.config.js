@@ -14,6 +14,8 @@ while ((idx += 2) <= length) {
 
 process.env.VUE_APP_PROJECT_ID = config['--projectId']
 console.log("页面ID：" + process.env.VUE_APP_PROJECT_ID)
+process.env.VUE_APP_PROJECT_DATA_URL = config['--projectDataUrl']
+console.log("页面数据地址：" + process.env.VUE_APP_PROJECT_DATA_URL)
 
 // VUE 平台配置内容
 module.exports = {
